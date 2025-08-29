@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>The Difference Between Responsive and Adaptive Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #185855;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 16px rgba(0,0,0,0.15);
+      padding: 40px 32px 32px 32px;
+      text-align: left;
+    }
+    .breadcrumbs {
+      opacity: 0.7;
+      margin-bottom: 1.2em;
+      font-size: 1.1em;
+    }
+    .title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 1.2em;
+    }
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-top: 2.1em;
+      font-size: 1em;
+      flex-wrap: wrap;
+    }
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid #bbb;
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      color: #bbb;
+    }
+    .meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .meta strong {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 2px;
+      color: #fff;
+    }
+    .meta a {
+      color: #f6f5f0;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 8px;
+      }
+      .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="breadcrumbs">Home / Articles /</div>
+    <div class="title">The Difference Between<br>Responsive and Adaptive Design</div>
+    <div class="info-row">
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <img src="account.png" alt="Аватар" style="width: 60px; height: 60px; border-radius: 50%;">
+      </div>
+      <div class="meta">
+        <div><strong>Updated</strong> Nov 17, 2018</div>
+        <div><strong>49 Comments</strong> <a href="#">Go to comments</a></div>
+      </div>
+      <div class="meta">
+        <div><strong>Author</strong> Geoff Graham</div>
+        <div><strong>Published</strong> Nov 11, 2018</div>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:770px;margin:20px auto;text-align:left;margin-top:32px;">
+  </div>
+</body>
+</html>
